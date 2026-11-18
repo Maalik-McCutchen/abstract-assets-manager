@@ -51,7 +51,7 @@ public class House extends Asset {
 
 
     @Override
-    public BigDecimal getValue() {
+    public int getValue() {
         BigDecimal value = BigDecimal.ZERO;
 
         switch (condition) {

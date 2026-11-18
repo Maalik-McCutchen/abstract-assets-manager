@@ -41,7 +41,7 @@ public class Vehicle extends Asset {
     }
 
     @Override
-    public BigDecimal getValue() {
+    public int getValue() {
 
         int currentYear = LocalDate.now().getYear();
         int age = currentYear - year;

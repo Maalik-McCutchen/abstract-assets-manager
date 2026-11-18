@@ -2,7 +2,7 @@ package com.pluralsight;
 
 import java.math.BigDecimal;
 
-public class Asset {
+public abstract class Asset {
     // Backing variables: private, the child classes use the getters
     private String description;
     private String dateAcquired;
@@ -38,7 +38,5 @@ public class Asset {
         this.originalCost = originalCost;
     }
 
-    public BigDecimal getValue() {
-        return originalCost;
-    }
+    public abstract int getValue();
 }
